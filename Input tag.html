@@ -1,0 +1,84 @@
+Form elements:
+
+input:
+
+<input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10" />
+
+
+
+<br>
+label:
+
+<label for="name">Name (4 to 8 characters):</label>
+(id of <input> and <label> for must have same value.)
+
+
+<br>
+
+textarea:
+
+<label for="sentence">Tell us your story:</label>
+
+<textarea id="sentence" name="sentence" rows="5" cols="33">
+Hai Allways be pleasant... , Life is to enjoy.
+</textarea>
+
+
+<br>
+button:
+
+<button type="button">Add to favorites</button>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+
+<br>
+select:
+option:
+optgroup:
+
+<label>Please choose one or more vehicals:
+  <select name="vehicals" multiple size="4">
+    <optgroup label="4-Wheelers">
+      <option value="car">Car</option>
+      <option value="van">Van</option>
+      <option value="jeep" disabled>Jeep</option>
+    </optgroup>
+    <optgroup label="2-Wheelers">
+      <option value="bike">Bike</option>
+      <option value="scooter">Scooter</option>
+      <option value="bicycle">Bicycle</option>
+    </optgroup>
+  </select>
+</label>
+
+
+
+
+<br>
+fieldset:
+
+<fieldset>
+    <legend>Choose your favorite monster</legend>
+    <label for="name">Name (4 to 8 characters):</label>
+    <input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10" />
+</fieldset>
+
+
+
+
+
+<br>
+output:
+
+<form>
+<oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="range" id="b" name="b" value="50" /> +
+  <input type="number" id="a" name="a" value="30" /> =
+  <output name="result" for="a b">80</output>
+</form>
+  
+  
+  
